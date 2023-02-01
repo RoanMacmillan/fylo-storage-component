@@ -1,0 +1,190 @@
+/* makes sizing simpler */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  
+
+}
+
+/* dark mode user-agent-styles */
+
+html {
+  color-scheme: dark light;
+}
+
+/* min body height */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('./assets/images/bg-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+p, span {
+
+  color: #DBD9FF;
+}
+
+.usage-text {
+
+  font-weight: 400;
+}
+
+.usage-amnt {
+
+  font-weight: 700;
+}
+
+.left, .right {
+
+  font-size: 12px;
+line-height: 14px;
+font-weight: 700;
+}
+
+.gb-container {
+
+  display: flex;
+  justify-content: space-between;
+  
+  width: 262px;
+}
+
+.icon-wrapper {
+
+  display: flex;
+  gap: 16.05px;
+}
+
+.main-container {
+
+  width: 326px;
+  height: 413px;
+}
+
+
+
+.top-container {
+
+  height: 201px;
+  border-radius: 10px 100px 10px 10px;
+  background: #1E2D69;
+  box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 33px;
+  padding-left: 41.13px;
+}
+
+
+.bottom-container {
+
+  height: 160px;
+  background: #1E2D69;
+  border-radius: 10px;
+  margin-top: 16px;
+  box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+
+
+
+  .main-container {
+
+    display: flex;
+    position: relative;
+    gap: 30px;
+    width: 920px;
+    height: 201px;
+  }
+
+  .top-container {
+
+    width: 350px;
+    padding-left: 41px;
+  }
+
+  .bottom-container {
+
+    margin-top: auto;
+    margin-left: auto;
+    width: 540px;
+    
+  }
+
+
+  
+
+
+  .gb-container {
+
+    width: 461px;
+  }
+
+
+  .usage-text {
+
+    margin-right: auto;
+    margin-left: 39px;
+  }
+}
+
+
+
+@media screen and (min-width: 1440px) {
+
+
+
+  body {
+
+    background: url('./assets/images/bg-desktop.png');
+    background-repeat: no-repeat;  
+    background-color: #0C122C;
+    background-position-y: bottom;
+    background-position-x:center;
+    
+  }
+
+}
+
+
+@media screen and (min-width: 1443px) {
+
+  body {
+
+    background-size: contain;
+  }
+
+}
