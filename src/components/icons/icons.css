@@ -1,22 +1,27 @@
 .icon-container {
 
-    width: 48.15px;
-    height: 48px;
-    background: #0C122C;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  width: 48.15px;
+  height: 48px;
+  background: #0C122C;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+
 }
 
+.icon-container .icon {
+  transition: filter .2s ease-in-out;
+
+
+}
 
 .icon-container:hover {
-    transform: scale(1.1);
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .icon-container:hover .icon {
-    transition: filter 0.2s ease-in-out;
-    filter: brightness(0) invert(1);
-  }
+  transform: scale(1.1);
+}
+
+.icon-container:hover .icon {
+  filter: brightness(0) invert(1);
+}
