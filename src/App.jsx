@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.css'
 import TopContainer from './components/TopContainer'
-import Label from './components/label/label'
+import Label from './components/label/Label'
 import BottomContainer from './components/BottomContainer'
 
 const App = () => (
